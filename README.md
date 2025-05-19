@@ -1,6 +1,6 @@
 # 🧠 TopoIndex
 
-**TopoIndex** is a Python library for computing topological indices of molecular and graph structures using [NetworkX](https://networkx.org/). It supports input via SMILES strings and is designed for mathematical chemistry, cheminformatics, and graph theory applications.
+**TopoIndex** is a Python library for computing topological indices of molecular and graph structures using [NetworkX](https://networkx.org/) and [RDKit](https://www.rdkit.org/). It supports input via SMILES strings and is designed for mathematical chemistry, cheminformatics, and graph theory applications.
 
 ---
 
@@ -32,11 +32,8 @@ cd topoindex
 pip install .
 ```
 
-> ⚠️ Requires `networkx`. RDKit must be installed separately via Conda:
-> 
-> ```bash
-> conda install -c rdkit rdkit
-> ```
+> ⚠️ Requires `networkx` and `rdkit`.
+
 
 ---
 
