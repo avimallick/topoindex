@@ -1,9 +1,12 @@
-from topoindex.indices.wiener import wiener_index
-from topoindex.indices.zagreb import first_zagreb_index, second_zagreb_index
-from topoindex.indices.hyper_wiener import hyper_wiener_index
-from topoindex.indices.randic import randic_index
-from topoindex.indices.balaban import balaban_index
-from topoindex.indices.eccentric_connectivity import eccentric_connectivity_index
+from topoindex import (
+    wiener_index,
+    first_zagreb_index,
+    second_zagreb_index,
+    hyper_wiener_index,
+    randic_index,
+    balaban_index,
+    eccentric_connectivity_index,
+)
 
 smiles = "CCO"  # ethanol
 
