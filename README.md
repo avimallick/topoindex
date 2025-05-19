@@ -77,18 +77,6 @@ Topological indices are numerical descriptors of graph structure widely used in:
 
 ---
 
-## 📁 Project Structure
-
-```
-topoindex/
-├── indices/           # Core index computations
-├── utils/             # SMILES to graph conversion
-├── tests/             # Unit tests (Pytest)
-├── examples/          # Example usage scripts
-```
-
----
-
 ## 📝 License
 
 Licensed under the [MIT License](LICENSE).
