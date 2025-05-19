@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: topoindex
+Version: 0.1.0
+Summary: A Python library for computing topological indices from SMILES using NetworkX
+Author: Avinash Mallick
+License: MIT
+License-File: LICENSE
+Requires-Dist: networkx
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
