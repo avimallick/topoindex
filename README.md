@@ -27,7 +27,7 @@ pip install topoindex
 For now (manual installation):
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/topoindex.git
+git clone https://github.com/avimallick/topoindex.git
 cd topoindex
 pip install .
 ```
