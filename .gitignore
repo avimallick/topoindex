@@ -1,4 +1,4 @@
 # Build artifacts
 dist/
-*.egg-info/
+topoindex.egg-info/
 build/
