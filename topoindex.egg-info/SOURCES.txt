@@ -1,7 +1,9 @@
 LICENSE
+MANIFEST.in
 README.md
 pyproject.toml
 setup.py
+examples/basic_usage.ipynb
 tests/test_balaban.py
 tests/test_eccentric_connectivity.py
 tests/test_hyper_wiener.py

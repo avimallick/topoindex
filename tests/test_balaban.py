@@ -1,4 +1,4 @@
-from topoindex.indices.balaban import balaban_index
+from topoindex import balaban_index
 
 def test_balaban_ethanol():
     result = balaban_index("CCO")
