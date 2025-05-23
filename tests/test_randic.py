@@ -1,4 +1,4 @@
-from topoindex.indices.randic import randic_index
+from topoindex import randic_index
 
 def test_randic_ethanol():
     result = randic_index("CCO")
