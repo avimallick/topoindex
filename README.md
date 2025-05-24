@@ -12,6 +12,11 @@
 - ✅ **Randic Index**
 - ✅ **Balaban Index**
 - ✅ **Eccentric Connectivity Index**
+- ✅ **Graph Invariants**  
+  - Node & edge count, diameter, radius, girth  
+  - Spectral radius, Estrada index, Graph energy  
+  - Optional distance matrix output
+- ✅ **Command-Line Interface (CLI)**
 - 📘 More indices coming soon!
 
 ---
@@ -24,20 +29,19 @@ Once released on PyPI:
 pip install topoindex
 ```
 
-For now (manual installation):
+For manual installation:
 
 ```bash
 git clone https://github.com/avimallick/topoindex.git
 cd topoindex
-pip install .
+pip install -e .
 ```
 
 > ⚠️ Requires `networkx` and `rdkit`.
 
-
 ---
 
-## 🧪 Example Usage
+## 🧪 Example Usage (Python)
 
 ```python
 from topoindex import (
@@ -49,6 +53,7 @@ from topoindex import (
     balaban_index,
     eccentric_connectivity_index,
 )
+from topoindex.graphs.invariants import compute_invariants
 
 smiles = "CCO"  # Ethanol
 
@@ -60,6 +65,35 @@ print("Randic:", randic_index(smiles))
 print("Balaban:", balaban_index(smiles))
 print("Eccentric Connectivity:", eccentric_connectivity_index(smiles))
 
+invariants = compute_invariants(smiles, include_matrix=True, matrix_format="pandas")
+print("Graph Invariants:", invariants)
+```
+
+---
+
+## 🖥️ CLI Usage
+
+TopoIndex also provides a command-line interface:
+
+```bash
+topoindex --smiles "C1=CC=CC=C1" --matrix --matrix-format pandas
+```
+
+Example Output (JSON):
+
+```json
+{
+  "num_nodes": 6,
+  "num_edges": 6,
+  "diameter": 3,
+  "radius": 3,
+  "girth": 6,
+  "spectral_radius": 2.0,
+  "estrada_index": 9.38,
+  "graph_energy": 8.47,
+  "distance_matrix": [[0, 1, 2, 1, 2, 3], [1, 0, 1, 2, 3, 2], ...]
+}
+```
 
 ---
 
