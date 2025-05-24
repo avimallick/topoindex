@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="topoindex",
-    version="0.1.5",
+    version="0.1.6",
     packages=find_packages(),
-    install_requires=["networkx", "rdkit"],
+    install_requires=["networkx", "rdkit", "pandas"],
     author="Avinash Mallick",
     author_email="avimallick@gmail.com",
     description="A Python library for computing topological indices from SMILES using NetworkX",
