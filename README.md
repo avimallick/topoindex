@@ -37,7 +37,7 @@ cd topoindex
 pip install -e .
 ```
 
-> ⚠️ Requires `networkx` and `rdkit`.
+> ⚠️ Requires `networkx`, `rdkit` and `pandas`.
 
 ---
 
